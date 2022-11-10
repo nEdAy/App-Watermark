@@ -11,10 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         doConfigure()
                 .setAppCompatActivity(this@MainActivity)
-                .setWatermarkProperty(R.layout.layout_water_mark, 40, R.color.colorAccent)
+                .setWatermarkProperty(R.layout.layout_water_mark, 0, R.color.colorAccent)
                 .showAlsoOutsideOfTheApp()
                 .showWatermarkAfterConfig(object : WatermarkListener {
                     override fun onSuccess() {

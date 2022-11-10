@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gk.emon.app.watermark">
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +11,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name="com.gk.emon.app.watermark.ShowWatermarkActivity" />
         <activity android:name="com.gk.emon.app.watermark.HideWatermarkActivity" />
-        <activity android:name="com.gk.emon.app.watermark.MainActivity">
+        <activity android:name="com.gk.emon.app.watermark.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

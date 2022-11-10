@@ -9,6 +9,6 @@ class HideWatermarkActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hide_watermark)
-        findViewById<View>(R.id.btn_hide_watermark).setOnClickListener {hideWatermark() }
+        findViewById<View>(R.id.btn_hide_watermark).setOnClickListener { hideWatermark() }
     }
 }
